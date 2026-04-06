@@ -1,0 +1,603 @@
+<!DOCTYPE html>
+<html lang="ar" dir="rtl">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta name="description" content="بشر أولاً — منصة أكاديمية تثبت أن الخدمة الاجتماعية مهنة إنسانية لا يمكن للذكاء الاصطناعي استبدالها" />
+  <title>بشر أولاً | Bashar Platform</title>
+
+  <!-- Bootstrap 5 RTL -->
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.rtl.min.css" />
+  <!-- Bootstrap Icons -->
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css" />
+  <!-- Google Fonts -->
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Tajawal:wght@300;400;500;700;800&family=Cairo:wght@400;600;700;800&display=swap" rel="stylesheet" />
+  <!-- Custom CSS -->
+  <link rel="stylesheet" href="style.css" />
+
+  <style>
+    /* Unsplash hero image via CSS background for cross-origin safety */
+    .hero-img-main {
+      background: linear-gradient(135deg, #1A5CA8 0%, #0C3B6E 100%);
+      width: 100%; border-radius: 20px;
+      min-height: 400px;
+      display: flex; align-items: center; justify-content: center;
+      position: relative; overflow: hidden;
+    }
+    .hero-img-main::after {
+      content: '';
+      position: absolute; inset: 0;
+      background: url('https://images.unsplash.com/photo-1573496359142-b8d87734a5a2?w=700&q=80') center/cover no-repeat;
+      border-radius: 20px;
+      opacity: .85;
+    }
+  </style>
+</head>
+
+<body>
+
+  <!-- ══════════════════════════════
+       NAVBAR
+  ══════════════════════════════ -->
+  <nav id="navbar" class="navbar navbar-expand-lg">
+    <div class="container">
+
+      <a class="navbar-brand" href="#">
+        <span class="logo-text">بشر </span>
+        <span class="logo-sub">Bashar Platform</span>
+      </a>
+
+      <button class="navbar-toggler" type="button"
+              data-bs-toggle="collapse" data-bs-target="#mainNav"
+              aria-controls="mainNav" aria-expanded="false" aria-label="القائمة">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+
+      <div class="collapse navbar-collapse" id="mainNav">
+        <ul class="navbar-nav mx-auto gap-1">
+          <li class="nav-item"><a class="nav-link active" href="#hero">الرئيسية</a></li>
+          <li class="nav-item"><a class="nav-link" href="#why">لماذا نختلف</a></li>
+          <li class="nav-item"><a class="nav-link" href="#compare">مقارنة</a></li>
+          <li class="nav-item"><a class="nav-link" href="#voices">شهادات</a></li>
+          <li class="nav-item"><a class="nav-link" href="#resources">المكتبة</a></li>
+          <li class="nav-item"><a class="nav-link" href="#cta">انضم</a></li>
+        </ul>
+      
+      </div>
+
+    </div>
+  </nav>
+
+
+  <!-- ══════════════════════════════
+       HERO
+  ══════════════════════════════ -->
+  <section id="hero">
+    <div class="container">
+      <div class="row align-items-center g-5">
+
+        <!-- Text -->
+        <div class="col-lg-6">
+          <div class="hero-badge fade-up">
+            <span class="dot"></span>
+            منصة أكاديمية متخصصة
+          </div>
+
+          <h1 class="hero-title fade-up delay-1">
+            الخدمة الاجتماعية<br>
+            مهنة <span class="highlight">الإنسان</span>،<br>
+            لا الآلة
+          </h1>
+
+          <p class="hero-desc fade-up delay-2">
+            مرجعك الأكاديمي لفهم لماذا مهنة الخدمة الاجتماعية لن يستبدلها الذكاء الاصطناعي —
+            مبني على أبحاث علمية، نقاشات أكاديمية، وتجارب ميدانية حقيقية.
+          </p>
+
+          <div class="d-flex gap-3 flex-wrap fade-up delay-3">
+            <a href="#why" class="btn-primary">
+              <i class="bi bi-compass"></i> استكشف المحتوى
+            </a>
+            <a href="#resources" class="btn-outline">
+              <i class="bi bi-book"></i> المكتبة الأكاديمية
+            </a>
+          </div>
+
+          <div class="hero-stats fade-up delay-4">
+            <div class="hero-stat-item">
+              <div class="hero-stat-num">87%</div>
+              <div class="hero-stat-lbl">من العملاء يفضلون<br>التحدث مع إنسان</div>
+            </div>
+            <div class="hero-stat-item">
+              <div class="hero-stat-num">3×</div>
+              <div class="hero-stat-lbl">معدل تعافٍ أعلى<br>مع دعم إنساني</div>
+            </div>
+            <div class="hero-stat-item">
+              <div class="hero-stat-num">0</div>
+              <div class="hero-stat-lbl">مشاعر حقيقية<br>لدى الذكاء الاصطناعي</div>
+            </div>
+          </div>
+        </div>
+
+        <!-- Image -->
+        <div class="col-lg-6">
+          <div class="hero-img-wrap fade-up delay-2">
+            <div class="hero-img-main"></div>
+
+            <div class="hero-float-card card-1">
+              <div class="float-icon">🤝</div>
+              <div class="float-title">تعاطف حقيقي</div>
+              <div class="float-sub">لا يُقاس بخوارزميات</div>
+            </div>
+
+            <div class="hero-float-card card-2">
+              <div class="float-icon">❤️</div>
+              <div class="float-title">مشاعر أصيلة</div>
+              <div class="float-sub">جوهر المهنة</div>
+            </div>
+          </div>
+        </div>
+
+      </div>
+    </div>
+  </section>
+
+
+  <!-- ══════════════════════════════
+       WHY DIFFERENT
+  ══════════════════════════════ -->
+  <section id="why">
+    <div class="container">
+
+      <div class="section-head fade-up">
+        <span class="section-label">لماذا الخدمة الاجتماعية مختلفة؟</span>
+        <h2 class="section-title">ما لا يستطيع الذكاء الاصطناعي تقديمه</h2>
+        <p class="section-sub">
+          الخدمة الاجتماعية تعتمد على كفاءات إنسانية عميقة لا يمكن ترجمتها إلى خوارزميات أو برامج حاسوبية.
+        </p>
+      </div>
+
+      <div class="row g-4">
+        <div class="col-sm-6 col-lg-4 fade-up delay-1">
+          <div class="why-card">
+            <div class="why-icon">🧠</div>
+            <div class="why-title">الحكم الأخلاقي</div>
+            <p class="why-desc">القرارات المعقدة تتطلب حكمة إنسانية مبنية على القيم والسياق الاجتماعي، لا على البيانات فقط.</p>
+          </div>
+        </div>
+        <div class="col-sm-6 col-lg-4 fade-up delay-2">
+          <div class="why-card">
+            <div class="why-icon">💬</div>
+            <div class="why-title">الاستماع الحقيقي</div>
+            <p class="why-desc">الاستماع ليس مجرد معالجة كلمات — هو حضور إنساني كامل يشعر به الشخص المحتاج بعمق.</p>
+          </div>
+        </div>
+        <div class="col-sm-6 col-lg-4 fade-up delay-3">
+          <div class="why-card">
+            <div class="why-icon">🛡️</div>
+            <div class="why-title">بناء الثقة</div>
+            <p class="why-desc">الثقة تُبنى عبر الزمن والتجربة المشتركة والعلاقة الإنسانية الحقيقية، لا عبر واجهة رقمية.</p>
+          </div>
+        </div>
+        <div class="col-sm-6 col-lg-4 fade-up delay-1">
+          <div class="why-card">
+            <div class="why-icon">🌍</div>
+            <div class="why-title">الفهم الثقافي</div>
+            <p class="why-desc">كل مجتمع له سياقه الخاص، والأخصائي يعيش هذا السياق ويفهمه من الداخل بشكل عضوي.</p>
+          </div>
+        </div>
+        <div class="col-sm-6 col-lg-4 fade-up delay-2">
+          <div class="why-card">
+            <div class="why-icon">🫂</div>
+            <div class="why-title">دعم الأزمات</div>
+            <p class="why-desc">في اللحظات الأصعب، الإنسان يحتاج لمن يجلس بجانبه ويشاركه ألمه — لا رسالة نصية.</p>
+          </div>
+        </div>
+        <div class="col-sm-6 col-lg-4 fade-up delay-3">
+          <div class="why-card">
+            <div class="why-icon">⚖️</div>
+            <div class="why-title">المناصرة والتمكين</div>
+            <p class="why-desc">الدفاع عن حقوق الأفراد يحتاج قناعة أخلاقية وشجاعة وإرادة إنسانية حقيقية لا برمجة.</p>
+          </div>
+        </div>
+      </div>
+
+    </div>
+  </section>
+
+
+  <!-- ══════════════════════════════
+       COMPARE
+  ══════════════════════════════ -->
+  <section id="compare" class="bg-alt">
+    <div class="container">
+
+      <div class="row justify-content-center">
+        <div class="col-lg-8 text-center section-head fade-up">
+          <span class="section-label">مقارنة أكاديمية</span>
+          <h2 class="section-title">الأخصائي الاجتماعي مقابل الذكاء الاصطناعي</h2>
+          <p class="section-sub mx-auto">
+            جدول مقارنة مبني على أدبيات الخدمة الاجتماعية والدراسات الحديثة في مجال التكنولوجيا والرعاية الاجتماعية.
+          </p>
+        </div>
+      </div>
+
+      <div class="row justify-content-center fade-up delay-2">
+        <div class="col-lg-10">
+          <div class="table-responsive">
+            <table class="table compare-table">
+              <thead>
+                <tr>
+                  <th style="width:50%">الكفاءة المهنية</th>
+                  <th class="text-center">الأخصائي الاجتماعي</th>
+                  <th class="text-center">الذكاء الاصطناعي</th>
+                </tr>
+              </thead>
+              <tbody>
+                <tr>
+                  <td>التعاطف العاطفي الحقيقي</td>
+                  <td class="text-center"><span class="badge-yes">✓ نعم</span></td>
+                  <td class="text-center"><span class="badge-no">✗ لا</span></td>
+                </tr>
+                <tr>
+                  <td>بناء علاقة ثقة مع العميل</td>
+                  <td class="text-center"><span class="badge-yes">✓ نعم</span></td>
+                  <td class="text-center"><span class="badge-no">✗ لا</span></td>
+                </tr>
+                <tr>
+                  <td>التدخل في حالات الأزمات</td>
+                  <td class="text-center"><span class="badge-yes">✓ نعم</span></td>
+                  <td class="text-center"><span class="badge-no">✗ لا</span></td>
+                </tr>
+                <tr>
+                  <td>الحكم الأخلاقي والقيمي</td>
+                  <td class="text-center"><span class="badge-yes">✓ نعم</span></td>
+                  <td class="text-center"><span class="badge-partial">⚠ محدود جداً</span></td>
+                </tr>
+                <tr>
+                  <td>الفهم الثقافي والسياقي</td>
+                  <td class="text-center"><span class="badge-yes">✓ نعم</span></td>
+                  <td class="text-center"><span class="badge-partial">⚠ سطحي</span></td>
+                </tr>
+                <tr>
+                  <td>مناصرة حقوق العميل</td>
+                  <td class="text-center"><span class="badge-yes">✓ نعم</span></td>
+                  <td class="text-center"><span class="badge-no">✗ لا</span></td>
+                </tr>
+                <tr>
+                  <td>تنظيم البيانات والتقارير</td>
+                  <td class="text-center"><span class="badge-yes">✓ نعم</span></td>
+                  <td class="text-center"><span class="badge-partial">⚠ مساعد فقط</span></td>
+                </tr>
+              </tbody>
+            </table>
+          </div>
+        </div>
+      </div>
+
+    </div>
+  </section>
+
+
+  <!-- ══════════════════════════════
+       STATS BAND
+  ══════════════════════════════ -->
+  <section id="stats">
+    <div class="container">
+      <div class="row g-4 align-items-center justify-content-center text-center">
+
+        <div class="col-6 col-md-3 fade-up delay-1">
+          <div class="stat-item">
+            <span class="stat-num"><span class="counter" data-target="87" data-suffix="%">0%</span></span>
+            <span class="stat-label">من العملاء يفضلون التحدث<br>مع أخصائي إنساني في الأزمات</span>
+          </div>
+        </div>
+
+        <div class="col-12 col-md-1 d-none d-md-block">
+          <div class="stat-divider"></div>
+        </div>
+
+        <div class="col-6 col-md-3 fade-up delay-2">
+          <div class="stat-item">
+            <span class="stat-num"><span class="counter" data-target="3" data-suffix="×">0×</span></span>
+            <span class="stat-label">معدل تعافٍ أعلى<br>مع الدعم الإنساني المنتظم</span>
+          </div>
+        </div>
+
+        <div class="col-12 col-md-1 d-none d-md-block">
+          <div class="stat-divider"></div>
+        </div>
+
+        <div class="col-6 col-md-3 fade-up delay-3">
+          <div class="stat-item">
+            <span class="stat-num"><span class="counter" data-target="92" data-suffix="%">0%</span></span>
+            <span class="stat-label">من القرارات الحساسة<br>تستلزم حكماً إنسانياً</span>
+          </div>
+        </div>
+
+      </div>
+    </div>
+  </section>
+
+
+  <!-- ══════════════════════════════
+       VOICES / TESTIMONIALS
+  ══════════════════════════════ -->
+  <section id="voices">
+    <div class="container">
+
+      <div class="section-head fade-up">
+        <span class="section-label">شهادات حقيقية</span>
+        <h2 class="section-title">أصوات من الميدان</h2>
+        <p class="section-sub">ما يقوله الأخصائيون والعملاء عن أثر اللمسة الإنسانية الذي لا يعوّضه ذكاء اصطناعي.</p>
+      </div>
+
+      <div class="row g-4">
+
+        <div class="col-md-6 col-lg-4 fade-up delay-1">
+          <div class="quote-card">
+            <span class="quote-mark">"</span>
+            <p class="quote-text">عندما كنت في أصعب لحظات حياتي، لم أحتج لمعلومات — احتجت لإنسان يجلس معي ويسمعني بالفعل.</p>
+            <div class="d-flex align-items-center gap-2">
+              <div class="quote-avatar" style="background:#1A5CA8;">أح</div>
+              <div>
+                <div class="quote-name">أم حسن</div>
+                <div class="quote-role">مستفيدة من برنامج دعم الأسرة</div>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <div class="col-md-6 col-lg-4 fade-up delay-2">
+          <div class="quote-card">
+            <span class="quote-mark">"</span>
+            <p class="quote-text">الذكاء الاصطناعي يساعدني في الأوراق — لكن لحظة الاتصال الحقيقي مع العميل تلك لن يأخذها مني أحد.</p>
+            <div class="d-flex align-items-center gap-2">
+              <div class="quote-avatar" style="background:#059669;">سع</div>
+              <div>
+                <div class="quote-name">سمر علي</div>
+                <div class="quote-role">أخصائية اجتماعية — ١٢ سنة خبرة</div>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <div class="col-md-6 col-lg-4 fade-up delay-3">
+          <div class="quote-card">
+            <span class="quote-mark">"</span>
+            <p class="quote-text">المهارة الحقيقية في هذه المهنة ليست في التشخيص، بل في كيفية الجلوس مع الألم الإنساني والبقاء هناك.</p>
+            <div class="d-flex align-items-center gap-2">
+              <div class="quote-avatar" style="background:#C2410C;">هي</div>
+              <div>
+                <div class="quote-name">أ.د. هالة يوسف</div>
+                <div class="quote-role">أستاذة الخدمة الاجتماعية</div>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <div class="col-md-6 col-lg-4 fade-up delay-1">
+          <div class="quote-card">
+            <span class="quote-mark">"</span>
+            <p class="quote-text">عملت لسنوات مع أسر في أزمات. لا خوارزمية تستطيع أن تقرر متى تتدخل وكيف — تلك لحظة إنسانية بامتياز.</p>
+            <div class="d-flex align-items-center gap-2">
+              <div class="quote-avatar" style="background:#7C3AED;">خم</div>
+              <div>
+                <div class="quote-name">خالد محمود</div>
+                <div class="quote-role">أخصائي اجتماعي — مركز رعاية الطفل</div>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <div class="col-md-6 col-lg-4 fade-up delay-2">
+          <div class="quote-card">
+            <span class="quote-mark">"</span>
+            <p class="quote-text">ما تعلمته في كلية الخدمة الاجتماعية لا يُختزل في معلومات — هو تدريب على أن تكون إنساناً أكثر.</p>
+            <div class="d-flex align-items-center gap-2">
+              <div class="quote-avatar" style="background:#0891B2;">نب</div>
+              <div>
+                <div class="quote-name">نور بكر</div>
+                <div class="quote-role">طالبة دكتوراه — خدمة اجتماعية</div>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <div class="col-md-6 col-lg-4 fade-up delay-3">
+          <div class="quote-card">
+            <span class="quote-mark">"</span>
+            <p class="quote-text">التكنولوجيا أداة في يد الأخصائي — لكن يدَ الأخصائي ذاتها، وقلبه، هما ما يصنعان الفارق الحقيقي.</p>
+            <div class="d-flex align-items-center gap-2">
+              <div class="quote-avatar" style="background:#B45309;">رف</div>
+              <div>
+                <div class="quote-name">رانيا فتحي</div>
+                <div class="quote-role">مديرة برامج اجتماعية — NGO</div>
+              </div>
+            </div>
+          </div>
+        </div>
+
+      </div>
+    </div>
+  </section>
+
+
+  <!-- ══════════════════════════════
+       RESOURCES / LIBRARY
+  ══════════════════════════════ -->
+  <section id="resources" class="bg-alt">
+    <div class="container">
+
+      <div class="row align-items-end justify-content-between section-head fade-up">
+        <div class="col-lg-7">
+          <span class="section-label">المكتبة الأكاديمية</span>
+          <h2 class="section-title">أحدث المحتويات والأبحاث</h2>
+          <p class="section-sub">دراسات، مقالات، نقاشات، وقصص ميدانية تدعم موقفنا بحجج علمية رصينة.</p>
+        </div>
+        <div class="col-auto d-none d-lg-block fade-up">
+          <a href="#" class="btn-outline">
+            <i class="bi bi-grid"></i> عرض الكل
+          </a>
+        </div>
+      </div>
+
+      <div class="row g-4">
+
+        <div class="col-sm-6 col-lg-3 fade-up delay-1">
+          <div class="res-card">
+            <div class="res-type type-research">بحث أكاديمي</div>
+            <div class="res-body">
+              <div class="res-title">التدخل الإنساني في حالات العنف الأسري: ما الذي يعجز عنه الذكاء الاصطناعي؟</div>
+              <div class="res-meta">أ.د. نادية حسن · 2024</div>
+              <a class="res-link">اقرأ الدراسة <i class="bi bi-arrow-left"></i></a>
+            </div>
+          </div>
+        </div>
+
+        <div class="col-sm-6 col-lg-3 fade-up delay-2">
+          <div class="res-card">
+            <div class="res-type type-article">مقالة علمية</div>
+            <div class="res-body">
+              <div class="res-title">الذكاء الاصطناعي في الخدمات الاجتماعية: الفرص والحدود الأخلاقية</div>
+              <div class="res-meta">د. عمر الشريف · 2025</div>
+              <a class="res-link">اقرأ المقالة <i class="bi bi-arrow-left"></i></a>
+            </div>
+          </div>
+        </div>
+
+        <div class="col-sm-6 col-lg-3 fade-up delay-3">
+          <div class="res-card">
+            <div class="res-type type-discuss">نقاش طلابي</div>
+            <div class="res-body">
+              <div class="res-title">هل يمكن للذكاء الاصطناعي أن يحلّ محل الأخصائي الاجتماعي في ٢٠٣٠؟</div>
+              <div class="res-meta">مجتمع بشر أولاً · ٤٧ مشاركاً</div>
+              <a class="res-link">انضم للنقاش <i class="bi bi-arrow-left"></i></a>
+            </div>
+          </div>
+        </div>
+
+        <div class="col-sm-6 col-lg-3 fade-up delay-4">
+          <div class="res-card">
+            <div class="res-type type-story">قصة ميدانية</div>
+            <div class="res-body">
+              <div class="res-title">«لحظة الاتصال الحقيقية» — تجربة أخصائية في مركز إيواء للأسر</div>
+              <div class="res-meta">سمر علي، أخصائية اجتماعية</div>
+              <a class="res-link">اقرأ القصة <i class="bi bi-arrow-left"></i></a>
+            </div>
+          </div>
+        </div>
+
+      </div>
+    </div>
+  </section>
+
+
+  <!-- ══════════════════════════════
+       CTA — JOIN
+  ══════════════════════════════ -->
+  <section id="cta">
+    <div class="container">
+      <div class="row justify-content-center text-center">
+        <div class="col-lg-7 fade-up">
+
+          <span class="section-label" style="color:rgba(255,255,255,.7);">انضم للحركة</span>
+          <h2 class="section-title" style="color:#fff;font-size:clamp(1.8rem,4vw,2.5rem);">
+            معاً نثبت أن الإنسان أصيل
+          </h2>
+          <p style="color:rgba(255,255,255,.75);font-size:1rem;line-height:1.8;max-width:500px;margin:0 auto 2.25rem;">
+            انضم لآلاف الطلاب والأكاديميين والأخصائيين الذين يؤمنون بأن اللمسة الإنسانية
+            هي جوهر الخدمة الاجتماعية ولن يستبدلها ذكاء اصطناعي.
+          </p>
+
+    
+
+          <p style="color:rgba(255,255,255,.45);font-size:.78rem;margin-top:1rem;">
+            <i class="bi bi-shield-check"></i> مجاني للطلاب · لا إعلانات · خصوصيتك محفوظة
+          </p>
+
+        </div>
+      </div>
+    </div>
+  </section>
+
+
+  <!-- ══════════════════════════════
+       FOOTER
+  ══════════════════════════════ -->
+  <footer id="footer">
+    <div class="container">
+      <div class="row g-5">
+
+        <!-- Brand -->
+        <div class="col-lg-4">
+          <div class="footer-logo-text">بشر أولاً</div>
+          <p class="footer-desc">
+            منصة أكاديمية متخصصة تثبت أن مهنة الخدمة الاجتماعية إنسانية بالكامل،
+            ولا يمكن للذكاء الاصطناعي استبدال الأخصائي الاجتماعي.
+          </p>
+          <div class="d-flex gap-3 mt-3">
+            <a href="#" style="color:rgba(255,255,255,.5);font-size:1.2rem;" class="hover-white"><i class="bi bi-twitter-x"></i></a>
+            <a href="#" style="color:rgba(255,255,255,.5);font-size:1.2rem;"><i class="bi bi-linkedin"></i></a>
+            <a href="#" style="color:rgba(255,255,255,.5);font-size:1.2rem;"><i class="bi bi-instagram"></i></a>
+            <a href="#" style="color:rgba(255,255,255,.5);font-size:1.2rem;"><i class="bi bi-envelope"></i></a>
+          </div>
+        </div>
+
+        <!-- Links -->
+        <div class="col-6 col-lg-2">
+          <div class="footer-heading">المنصة</div>
+          <ul class="footer-links">
+            <li><a href="#why">لماذا نختلف</a></li>
+            <li><a href="#compare">المقارنة</a></li>
+            <li><a href="#voices">شهادات</a></li>
+            <li><a href="#resources">المكتبة</a></li>
+          </ul>
+        </div>
+
+       
+
+        <div class="col-6 col-lg-2">
+          <div class="footer-heading">عن المنصة</div>
+          <ul class="footer-links">
+            <li><a href="#">من نحن</a></li>
+            <li><a href="#">فريق العمل</a></li>
+            <li><a href="#">تواصل معنا</a></li>
+            <li><a href="#">سياسة الخصوصية</a></li>
+          </ul>
+        </div>
+
+        <div class="col-6 col-lg-2">
+          <div class="footer-heading">الأكاديمية</div>
+          <ul class="footer-links">
+            <li><a href="#">أبحاث</a></li>
+            <li><a href="#">مقالات</a></li>
+            <li><a href="#">قصص ميدانية</a></li>
+            <li><a href="#">نقاشات</a></li>
+          </ul>
+        </div>
+
+      </div>
+
+      <div class="footer-bottom d-flex flex-wrap justify-content-between align-items-center gap-2">
+        <span>© 2025 منصة بشر أولاً — جميع الحقوق محفوظة</span>
+        <span>صُنع بـ ❤ لطلاب الخدمة الاجتماعية</span>
+      </div>
+    </div>
+  </footer>
+
+
+  <!-- Back to top -->
+  <button id="backTop" title="العودة للأعلى">
+    <i class="bi bi-chevron-up"></i>
+  </button>
+
+
+  <!-- ── Scripts ── -->
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
+  <script src="js.js"></script>
+
+</body>
+</html>
